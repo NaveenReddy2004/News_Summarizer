@@ -1,6 +1,6 @@
 from fastapi import FastAPI
-from app.news_fetcher import fetch_top_news
-from app.summarizer import summarize_text
+from news_fetcher import fetch_top_news
+from summarizer import summarize_text
 from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
