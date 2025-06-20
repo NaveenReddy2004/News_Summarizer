@@ -5,10 +5,8 @@ from fastapi.middleware.cors import CORSMiddleware
 
 
 @app.get("/")
-def home():
+def read_root():
     return {"message": "Hello from Render!"}
-
-
 app = FastAPI()
 
 # Allow frontend to talk to backend
