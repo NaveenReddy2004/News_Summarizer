@@ -3,10 +3,6 @@ from app.news_fetcher import fetch_top_news
 from app.summarizer import summarize_text
 from fastapi.middleware.cors import CORSMiddleware
 
-
-@app.get("/")
-def read_root():
-    return {"message": "Hello from Render!"}
 app = FastAPI()
 
 # Allow frontend to talk to backend
